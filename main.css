@@ -1,12 +1,52 @@
 #portfolio img {
   object-fit: cover;
-  height: 100px; width: 100px
+  height: 200px; width: 200px
+}
+
+#portfolio h5{
+  position: absolute;
+    top: 30%;
+    left: 70%;
+    transform: translate(-80%, -20%);
+}
+
+#portfolio p{
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .jumbotron {
   background-color: cyan;
 }
 
-p{
- color: green;
+@keyframes bgFadeIn{
+0%{
+opacity: 0;
+}
+100%{
+  opacity:1;
+}
+}
+
+@keyframes bgFadeOut{
+0%{
+opacity: 1;
+}
+100%{
+  opacity:0;
+}
+}
+
+.card-img.fadeIn{
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation: bgFadeIn 2s forwards;
+}
+
+.card-img.fadeOut{
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation: bgFadeOut 2s forwards;
 }
