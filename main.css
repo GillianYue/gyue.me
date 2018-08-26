@@ -1,6 +1,8 @@
 #portfolio img {
   object-fit: cover;
-  height: 200px; width: 200px
+  height: 200px; width: 200px;
+  margin-top: 50px;
+  margin-left: 50px;
 }
 
 #portfolio h5{
@@ -14,14 +16,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-#mainText {
-  margin-top: 20px;
-  margin-left: 20px;
-  text-decoration-color: green;
-  background-color: green;
-  color: green;
 }
 
 .jumbotron {
