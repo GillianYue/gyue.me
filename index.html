@@ -10,7 +10,7 @@
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
     <link rel="stylesheet" href="./main.css"  type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Comfortaa|Gloria+Hallelujah" rel="stylesheet">
     <title>gyue.me</title>
   </head>
 
@@ -24,13 +24,22 @@
   image-rendering: crisp-edges;
   background-position: 10% 70%">
     <header class="container">
-      <div class="row" style="">
+      <div class="row" style="position: relative">
       <div class="col-md-4 p-5">
     <img src="./assets/img/profile.png" class="img-fluid rounded-circle" alt="Responsive image"
-    style="height: 150px; width: 150px; float: right">
+    style="height: 150px; width: 150px; float: right;
+    position:absolute; top: 20px; left: 20px; z-index:50;">
+    <img src="./assets/img/circular_frame.png"
+    style="position:absolute; top: 20px; left: 20px; z-index:51;
+    image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  background-position: 50% 50%;
+  height: 150px; width: 150px">
   </div>
-  <div class="col-7 p-5" style="color: black">
-    <h1 style="font-family: 'Cinzel', serif;
+  <div class="col-6 p-5" style="color: black">
+    <h1 style="font-family: 'Gloria Hallelujah', cursive;
     font-size: 200%">
       This is a website about <br/> <b>Gillian Yue</b>:
     <i>Aspiring game designer & developer</i></h1>
@@ -39,11 +48,13 @@
   </header>
 </div>
 
-  <section class="container bg-transparent"> <!-- texts of about me -->
+  <section class="container bg-transparent"
+  style="font-family: 'Comfortaa', cursive"> <!-- texts of about me -->
     <div class="row">
       <div class="col-10" style="margin: auto">
-    <div class="bg-light px-5 pt-5 pb-3">
-    <p>Hey there! My name is Gillian, and I'm a
+    <div class="bg-light px-5 pt-3 pb-3">
+    <p>
+      Hey there! My name is Gillian, and I'm a
       Dartmouth 22' who will be majoring in Computer
       Science with a minor in Digital Arts. I spent
       the first fourteen years of my life in the
