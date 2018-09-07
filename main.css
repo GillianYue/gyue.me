@@ -1,8 +1,13 @@
 #portfolio img {
   object-fit: cover;
-  height: 200px; width: 200px;
-  margin-top: 50px;
-  margin-left: 50px;
+  height: 200px; width: 200px
+  opacity: 0.5
+}
+
+#portfolio img:hover {
+  object-fit: cover;
+  height: 210px; width: 210px
+  opacity: 1.0;
 }
 
 #portfolio h5{
@@ -18,8 +23,12 @@
     transform: translate(-50%, -50%);
 }
 
+#portfolio.row{
+  border-style: none
+}
+
 .jumbotron {
-  background-color: cyan;
+  background-color: rgba(165,234,255,0.3);
 }
 
 @keyframes bgFadeIn{

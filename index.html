@@ -14,16 +14,31 @@
   </head>
 
   <body>
-    <div class="jumbotron">
+    <div class="jumbotron" style="background-color: rgba(165,234,255,0.2);
+    background: url(./assets/img/waves.png) no-repeat;
+    background-size: contain;
+    image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  background-position: 20% 70%">
     <header class="container">
+      <div class="row" style="">
+      <div class="col-md-4 p-5">
     <img src="./assets/img/profile.png" class="img-fluid rounded-circle" alt="Responsive image"
-    style="height: 200px; width: 200px">
-    <h1>This is a website about Gillian Yue:
+    style="height: 150px; width: 150px; float: right">
+  </div>
+  <div class="col-7 p-5" style="color: black">
+    <h1>This is a website about <br/> <b>Gillian Yue</b>:
     <i>Aspiring game designer & developer</i></h1>
+  </div>
+</div>
   </header>
 </div>
 
   <section class="container bg-transparent"> <!-- texts of about me -->
+    <div class="row">
+      <div class="col-10" style="margin: auto">
     <div class="bg-light px-5 pt-5 pb-3">
     <p>Hey there! My name is Gillian, and I'm a
       Dartmouth 22' who will be majoring in Computer
@@ -38,7 +53,7 @@
       <p>
         Here's a bit of info on the things that I know:
         <dl>
-        <dt>Coding-wise:</dt>
+        <dt class="p-2">Coding-wise:</dt>
         <dd>
         	•	I learned Java in high school, created a simple Super-Mario style platform game with it, and could independently write useful programs with it; I also had experience with command based programming in Java as the software person for my high school's robotics team
         	•	I work with Unity3d to create games, using C# to write the scripts of my games
@@ -46,7 +61,7 @@
         	•	I worked with Google AppsScript to process data in Google Sheets and Matlab to build models of a mountain in Utah for skiing routes
         	•	I've written a Bash script for a photogrammetry software pipeline
         </dd>
-        <dt>(Digital) Art:</dt>
+        <dt class="p-2">(Digital) Art:</dt>
         <dd>
         	•	I loved to doodle on paper since I was little; at 13 I purchased a drawing tablet and started doodling digitally
         	•	I love pixel art a lot, possibly tied to the fact that my childhood best friend was Nintendo Game Boy Advance
@@ -55,7 +70,7 @@
         	•	My experience with Unity allowed me to have a basic understanding of terms such as sprites, textures, materials, lighting and shading, camera rendering, etc.
         </dd>
 
-        <dt>Music:</dt>
+        <dt class="p-2">Music:</dt>
         <dd>
         	•	I enjoy all kinds of music, especially jazz
         	•	I played the piano, guitar and harmonica
@@ -64,11 +79,15 @@
         </dl>
       </p>
     </div>
+  </div>
+  </div>
    </section>
 
-<section class="container" id="portfolio"> <!-- projects with links -->
+<section class="container " id="portfolio"> <!-- projects with links -->
+  <div class="row">
+    <div class="col-10" style="margin: auto">
 
-  <div class="card bg-transparent text-black">
+  <div class="bg-transparent text-black">
     <div class="row">
 
     <div class="col">
@@ -82,22 +101,30 @@
 
     <div class="col">
     <img src="./assets/img/chirpy.jpg"
-    class="img-fluid rounded-circle"
+    class="img-fluid rounded-circle m-5"
     alt="Responsive image"
-    onclick="playAnim(0)">
+    onclick="playAnim(0)"
+    style="image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;">
   </img>
   </div>
 
   </div>
   </div>
 
-  <div class="card bg-transparent text-black">
+  <div class="bg-transparent text-black">
     <div class="row">
       <div class="col">
         <img src="./assets/img/bubbla.png"
-        class="img-fluid rounded-circle"
+        class="img-fluid rounded-circle m-5"
         alt="Responsive image"
-        onclick="playAnim(1)">
+        onclick="playAnim(1)"
+        style="image-rendering: -moz-crisp-edges;
+      image-rendering: -webkit-crisp-edges;
+      image-rendering: pixelated;
+      image-rendering: crisp-edges;">
       </img>
          </div>
         <div class="col">
@@ -111,7 +138,7 @@
   </div>
   </div>
 
-   <div class="card bg-transparent text-black">
+   <div class="bg-transparent text-black">
      <div class="row">
 
      <div class="col">
@@ -125,22 +152,30 @@
 
      <div class="col">
      <img src="./assets/img/Sprite-Gillian.png"
-     class="img-fluid rounded-circle"
+     class="img-fluid rounded-circle m-5"
      alt="Responsive image"
-     onclick="playAnim(2)">
+     onclick="playAnim(2)"
+     style="image-rendering: -moz-crisp-edges;
+   image-rendering: -webkit-crisp-edges;
+   image-rendering: pixelated;
+   image-rendering: crisp-edges;">
    </img>
    </div>
 
    </div>
    </div>
 
-   <div class="card bg-transparent text-black">
+   <div class="bg-transparent text-black">
      <div class="row">
        <div class="col">
          <img src="./assets/img/Garageband.png"
-         class="img-fluid rounded-circle"
+         class="img-fluid rounded-circle m-5"
          alt="Responsive image"
-         onclick="playAnim(3)">
+         onclick="playAnim(3)"
+         style="image-rendering: -moz-crisp-edges;
+       image-rendering: -webkit-crisp-edges;
+       image-rendering: pixelated;
+       image-rendering: crisp-edges;">
        </img>
           </div>
          <div class="col">
@@ -154,7 +189,7 @@
    </div>
    </div>
 
-   <div class="card bg-transparent text-black">
+   <div class="bg-transparent text-black">
      <div class="row">
 
      <div class="col">
@@ -168,15 +203,21 @@
 
      <div class="col">
      <img src="./assets/img/charizard.png"
-     class="img-fluid rounded-circle"
+     class="img-fluid rounded-circle m-5"
      alt="Responsive image"
-     onclick="playAnim(4)">
+     onclick="playAnim(4)"
+     style="image-rendering: -moz-crisp-edges;
+   image-rendering: -webkit-crisp-edges;
+   image-rendering: pixelated;
+   image-rendering: crisp-edges;">
    </img>
    </div>
 
    </div>
    </div>
 
+ </div>
+ </div>
       </section>
 
 <!-- -->
