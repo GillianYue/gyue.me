@@ -63,6 +63,10 @@ image-rendering: pixelated;
 image-rendering: crisp-edges;
 }
 
+audio{
+  padding-bottom: 10px;
+}
+
 #portfolio img:hover {
   object-fit: cover;
   height: 150px; width: 150px;
