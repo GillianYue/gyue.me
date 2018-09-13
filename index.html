@@ -11,32 +11,30 @@
     crossorigin="anonymous">
     <link rel="stylesheet" href="./main.css"  type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family=Cinzel|Comfortaa|Gloria+Hallelujah" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>gyue.me</title>
   </head>
 
   <body>
-    <div class="jumbotron" style="background-color: rgba(165,234,255,0.2);
-    background: url(./assets/img/waves.png) no-repeat;
+    <div class="bg"></div>
+    <div class="jumbotron" style="
+    background: url(./assets/img/waves0.png) no-repeat;
     background-size: contain;
     image-rendering: -moz-crisp-edges;
   image-rendering: -webkit-crisp-edges;
   image-rendering: pixelated;
   image-rendering: crisp-edges;
-  background-position: 10% 70%">
+  background-position: 48% 20px">
     <header class="container">
       <div class="row" style="position: relative">
       <div class="col-md-4 p-5">
-    <img src="./assets/img/profile.png" class="img-fluid rounded-circle" alt="Responsive image"
-    style="height: 150px; width: 150px; float: right;
-    position:absolute; top: 20px; left: 20px; z-index:50;">
-    <img src="./assets/img/circular_frame.png"
-    style="position:absolute; top: 20px; left: 20px; z-index:51;
-    image-rendering: -moz-crisp-edges;
-  image-rendering: -webkit-crisp-edges;
-  image-rendering: pixelated;
-  image-rendering: crisp-edges;
-  background-position: 50% 50%;
-  height: 150px; width: 150px">
+    <a href="index.html">
+      <img id="home" src="./assets/img/profile.png"
+    class="img-fluid rounded-circle upNdown"
+    alt="Responsive image"></a>
   </div>
   <div class="col-6 p-5" style="color: black">
     <h1 style="font-family: 'Gloria Hallelujah', cursive;
@@ -52,10 +50,10 @@
   style="font-family: 'Comfortaa', cursive"> <!-- texts of about me -->
     <div class="row">
       <div class="col-10" style="margin: auto">
-    <div class="bg-light px-5 pt-3 pb-3">
+    <div class="bg-light px-5 pt-3 pb-1">
     <p>
       Hey there! My name is Gillian, and I'm a
-      Dartmouth 22' who will be majoring in Computer
+      '22 who will be majoring in Computer
       Science with a minor in Digital Arts. I spent
       the first fourteen years of my life in the
       beautiful city of Shanghai before going to Boston
@@ -63,32 +61,40 @@
       games since I was a child, so I've been working on
       independent game projects throughout high school. </p>
     </div>
-    <div class="bg-light px-5 pt-2 pb-5">
+    <div class="bg-light px-5 pt-1 pb-5">
       <p>
         Here's a bit of info on the things that I know:
         <dl>
-        <dt class="p-2">Coding-wise:</dt>
+        <dt class="p-2"
+        style="font-family: 'Gloria Hallelujah', cursive;
+        font-size: 130%">Coding-wise:</dt>
         <dd>
+          <dd>
         	•	I learned Java in high school, created a simple Super-Mario style platform game with it, and could independently write useful programs with it; I also had experience with command based programming in Java as the software person for my high school's robotics team
-        	•	I work with Unity3d to create games, using C# to write the scripts of my games
-        	•	I've used HTML, CSS and Javascript in a Node.js web app project that virtually simulates my high school's bookstore.
-        	•	I worked with Google AppsScript to process data in Google Sheets and Matlab to build models of a mountain in Utah for skiing routes
-        	•	I've written a Bash script for a photogrammetry software pipeline
+  </dd><dd>
+          •	I work with Unity3d to create games, using C# to write the scripts of my games
+        </dd><dd>•	I've used HTML, CSS and Javascript in a Node.js web app project that virtually simulates my high school's bookstore.
+        </dd><dd>•	I worked with Google AppsScript to process data in Google Sheets and Matlab to build models of a mountain in Utah for skiing routes
+        </dd><dd>•	I've written a Bash script for a photogrammetry software pipeline
         </dd>
-        <dt class="p-2">(Digital) Art:</dt>
+        <dt class="p-2"
+        style="font-family: 'Gloria Hallelujah', cursive;
+        font-size: 130%">(Digital) Art:</dt>
         <dd>
         	•	I loved to doodle on paper since I was little; at 13 I purchased a drawing tablet and started doodling digitally
-        	•	I love pixel art a lot, possibly tied to the fact that my childhood best friend was Nintendo Game Boy Advance
-        	•	I worked with Maya and Blender to create 3d models for items sold in my high school's bookstore
-        	•	I did a one year research on the topic of photogrammetry and have worked with softwares that could scan multiple 2d photos of an item to render a 3d model
-        	•	My experience with Unity allowed me to have a basic understanding of terms such as sprites, textures, materials, lighting and shading, camera rendering, etc.
+        </dd><dd>•	I love pixel art a lot, possibly tied to the fact that my childhood best friend was Nintendo Game Boy Advance
+        </dd><dd>•	I worked with Maya and Blender to create 3d models for items sold in my high school's bookstore
+        </dd><dd>•	I did a one year research on the topic of photogrammetry and have worked with softwares that could scan multiple 2d photos of an item to render a 3d model
+        </dd><dd>•	My experience with Unity allowed me to have a basic understanding of terms such as sprites, textures, materials, lighting and shading, camera rendering, etc.
         </dd>
 
-        <dt class="p-2">Music:</dt>
+        <dt class="p-2"
+        style="font-family: 'Gloria Hallelujah', cursive;
+        font-size: 130%">Music:</dt>
         <dd>
         	•	I enjoy all kinds of music, especially jazz
-        	•	I played the piano, guitar and harmonica
-        	•	I love coming up with tunes and melodies, and would compose short digital songs with Garageband; my goal is to be able to completely be in charge of composing music for my games
+        </dd><dd>•	I played the piano, guitar and harmonica
+        </dd><dd>•	I love coming up with tunes and melodies, and would compose short digital songs with Garageband; my goal is to be able to completely be in charge of composing music for my games
         </dd>
         </dl>
       </p>
@@ -97,31 +103,39 @@
   </div>
    </section>
 
-<section class="container " id="portfolio"> <!-- projects with links -->
+<section class="container" id="portfolio"> <!-- projects with links -->
   <div class="row">
     <div class="col-10" style="margin: auto">
 
   <div class="bg-transparent text-black">
-    <div class="row">
+    <div class="row"
+    style="background: url(./assets/img/waves_01.png) no-repeat;
+    background-size: contain;
+    image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  background-position: 100% 0px;">
 
     <div class="col">
+      <div  style ="height: 300px; width: 600px">
     <img class="card-img" id="aD0" src="./assets/img/cardBG_pink.png" alt="Card image"
-    style ="height: 300px; width: 600px; opacity: 0">
-    <div class="card-img-overlay">
+    style ="height: 300px; width: 600px; opacity: 0;">
+  </div>
+    <div class="card-img-overlay" id="t0">
       <h5 class="card-title">Chirpy's Adventure</h5>
-      <p class="card-text">Simple Platform Game written in Java.</p>
+      <p class="card-text">Simple Platform Game written in Java.
+      </p>
+      <a href="./sub01.html">
+        <i class="fas fa-fish" id="f0"></i></a>
     </div>
        </div>
 
     <div class="col">
     <img src="./assets/img/chirpy.jpg"
-    class="img-fluid rounded-circle m-5"
+    class="img-fluid rounded-circle upNdown_c"
     alt="Responsive image"
-    onclick="playAnim(0)"
-    style="image-rendering: -moz-crisp-edges;
-  image-rendering: -webkit-crisp-edges;
-  image-rendering: pixelated;
-  image-rendering: crisp-edges;">
+    onclick="playAnim(0)">
   </img>
   </div>
 
@@ -129,44 +143,60 @@
   </div>
 
   <div class="bg-transparent text-black">
-    <div class="row">
+    <div class="row"
+      style="background: url(./assets/img/waves_02.png) no-repeat;
+      background-size: contain;
+      image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    background-position: 0% 0px;">
       <div class="col">
         <img src="./assets/img/bubbla.png"
-        class="img-fluid rounded-circle m-5"
+        class="img-fluid rounded-circle ml-5 upNdown_c"
         alt="Responsive image"
         onclick="playAnim(1)"
-        style="image-rendering: -moz-crisp-edges;
-      image-rendering: -webkit-crisp-edges;
-      image-rendering: pixelated;
-      image-rendering: crisp-edges;">
       </img>
          </div>
         <div class="col">
+          <div  style ="height: 300px; width: 600px">
     <img class="card-img" id="aD1" src="./assets/img/cardBG_blue.png" alt="Card image"
     style ="height: 300px; width: 600px; opacity: 0">
-    <div class="card-img-overlay">
+  </div>
+    <div class="card-img-overlay" id="t1">
       <h5 class="card-title">Bubbla</h5>
       <p class="card-text">iOS SpaceShooter game developed in Unity3d</p>
+            <a href="./sub02.html">
+              <i class="fas fa-fish" id="f1"></i></a>
      </div>
         </div>
   </div>
   </div>
 
    <div class="bg-transparent text-black">
-     <div class="row">
+     <div class="row"  style="background: url(./assets/img/waves_03.png) no-repeat;
+       background-size: contain;
+       image-rendering: -moz-crisp-edges;
+     image-rendering: -webkit-crisp-edges;
+     image-rendering: pixelated;
+     image-rendering: crisp-edges;
+     background-position: 80% 20px;">
 
      <div class="col">
+       <div  style ="height: 300px; width: 600px">
      <img class="card-img" id="aD2" src="./assets/img/cardBG_orange.png" alt="Card image"
      style ="height: 300px; width: 600px; opacity: 0">
-     <div class="card-img-overlay">
+   </div>
+     <div class="card-img-overlay" id="t2">
        <h5 class="card-title">Drawings</h5>
        <p class="card-text">Come see my drawings!</p>
+       <a href=">"<i class="fas fa-fish" id="f2"></i></a>
      </div>
         </div>
 
      <div class="col">
      <img src="./assets/img/Sprite-Gillian.png"
-     class="img-fluid rounded-circle m-5"
+     class="img-fluid rounded-circle upNdown_c"
      alt="Responsive image"
      onclick="playAnim(2)"
      style="image-rendering: -moz-crisp-edges;
@@ -180,10 +210,17 @@
    </div>
 
    <div class="bg-transparent text-black">
-     <div class="row">
+     <div class="row"
+     style="background: url(./assets/img/waves_04.png) no-repeat;
+       background-size: contain;
+       image-rendering: -moz-crisp-edges;
+     image-rendering: -webkit-crisp-edges;
+     image-rendering: pixelated;
+     image-rendering: crisp-edges;
+     background-position: 0% 0px;">
        <div class="col">
          <img src="./assets/img/Garageband.png"
-         class="img-fluid rounded-circle m-5"
+         class="img-fluid rounded-circle ml-5 upNdown_c"
          alt="Responsive image"
          onclick="playAnim(3)"
          style="image-rendering: -moz-crisp-edges;
@@ -193,31 +230,44 @@
        </img>
           </div>
          <div class="col">
+           <div  style ="height: 300px; width: 600px">
      <img class="card-img" id="aD3" src="./assets/img/cardBG_cyan.png" alt="Card image"
      style ="height: 300px; width: 600px; opacity: 0">
-     <div class="card-img-overlay">
+   </div>
+     <div class="card-img-overlay" id="t3">
        <h5 class="card-title">Music</h5>
        <p class="card-text">Composition in Piano & digitally in Garageband</p>
+  <i class="fas fa-fish" id="f3"></i>
       </div>
          </div>
    </div>
    </div>
 
    <div class="bg-transparent text-black">
-     <div class="row">
+     <div class="row"
+     style="background: url(./assets/img/waves_05.png) no-repeat;
+       background-size: contain;
+       image-rendering: -moz-crisp-edges;
+     image-rendering: -webkit-crisp-edges;
+     image-rendering: pixelated;
+     image-rendering: crisp-edges;
+     background-position: 83% 0px;">
 
      <div class="col">
+       <div  style ="height: 300px; width: 600px">
      <img class="card-img" id="aD4" src="./assets/img/cardBG_purple.png" alt="Card image"
      style ="height: 300px; width: 600px; opacity: 0">
-     <div class="card-img-overlay">
+   </div>
+     <div class="card-img-overlay" id="t4">
        <h5 class="card-title">Meet Charizard</h5>
        <p class="card-text">My first digital game pet.</p>
+  <i class="fas fa-fish" id="f4"></i>
      </div>
         </div>
 
      <div class="col">
      <img src="./assets/img/charizard.png"
-     class="img-fluid rounded-circle m-5"
+     class="img-fluid rounded-circle m-5 upNdown_c"
      alt="Responsive image"
      onclick="playAnim(4)"
      style="image-rendering: -moz-crisp-edges;
@@ -233,6 +283,40 @@
  </div>
  </div>
       </section>
+
+<div class="row" style="height = 50px">
+
+</div>
+
+<section id="footer" class="footer navbar-fixed-bottom">
+<div class="container">
+<div class="row">
+  <div class="col-md-12 py-5">
+          <div class="mb-5 center" style="
+          text-align: center">
+          <p>@Copyright 2018 Gillian Yue</p>
+          <ul class="list-unstyled list-inline social text-center">
+          <li class="list-inline-item">
+          <a href="https://gillianyue.com/" target="_blank">
+            <i class="far fa-moon"></i></a></li>
+            <li class="list-inline-item">
+<a href="https://www.youtube.com/channel/UCxLWq57kctYtRhiZXUQvmuQ/videos?view_as=subscriber"
+target="_blank">
+<i class="fab fa-youtube"></i></a></li>
+<li class="list-inline-item">
+<a href="https://ibb.co/gxRT29" target="_blank">
+  <i class="fas fa-crow"></i></a></li>
+  <li class="list-inline-item">
+  <a href="https://github.com/GillianYue" target="_blank">
+<i class="fab fa-github"></i></a></li>
+<li class="list-inline-item"><a>
+<i class="fas fa-poop" id="pp" onclick="pp()"></i></a></li>
+</ul>
+          </div>
+        </div>
+</div>
+</div>
+</section>
 
 <!-- -->
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

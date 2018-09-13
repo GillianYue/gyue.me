@@ -1,26 +1,92 @@
+  body{
+background-image: url(./assets/img/bg.png);
+  }
+
+#footer{
+background-color: rgba(78,134,158,1);
+margin-top: 50px;
+height: 160px;
+position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    overflow: hidden;
+}
+
+html,body{
+    height: 100%
+}
+
+#home{
+  height: 150px; width: 150px; float: right;
+  position:absolute; top: 70px; left: 190px; z-index:50;
+  cursor: pointer;
+
+}
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+    cursor: pointer; font-size: 30px;
+    target="_blank";
+}
+#footer ul.social li{
+	padding: 3px 0;
+}
+#footer ul.social li a i {
+    margin-right: 5px;
+	font-size:25px;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+	font-size:30px;
+	margin-top:-10px;
+}
+
 #portfolio img {
   object-fit: cover;
-  height: 200px; width: 200px
-  opacity: 0.5
+  cursor: pointer;
+  height: 150px; width: 150px;
+  opacity: 0.7;
+  position: absolute;
+  image-rendering: -moz-crisp-edges;
+image-rendering: -webkit-crisp-edges;
+image-rendering: pixelated;
+image-rendering: crisp-edges;
 }
 
 #portfolio img:hover {
   object-fit: cover;
-  height: 210px; width: 210px
-  opacity: 1.0;
+  height: 150px; width: 150px;
+  opacity: 0.9;
 }
 
 #portfolio h5{
-  position: absolute;
-    top: 30%;
-    left: 40%;
+     text-align: center;
+     padding-top: 7%;
+    top: 50%;
+    font-family: 'Cinzel', serif;
+    font-size: 200%;
+    opacity: 0;
+}
+
+#portfolio .card-img{
+  text-align: center;
 }
 
 #portfolio p{
   position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 120%;
+    opacity: 0;
 }
 
 #portfolio.row{
@@ -29,6 +95,23 @@
 
 .jumbotron {
   background-color: rgba(165,234,255,0.3);
+}
+
+.fa-fish{
+margin-left: 450px;
+margin-top: 40px;
+color: black;
+z-index: 50;
+font-size:20px;
+-webkit-transition: .5s all ease;
+-moz-transition: .5s all ease;
+transition: .5s all ease;
+cursor: pointer;
+opacity: 0;
+}
+
+.fa-fish:hover{
+  font-size: 25px;
 }
 
 @keyframes bgFadeIn{
@@ -49,13 +132,60 @@ opacity: 1;
 }
 }
 
-.card-img.fadeIn{
+@keyframes upNdown{
+0%{
+top: 80px;
+opacity: 1;
+}
+10%{
+  top: 20px;
+}
+20%{
+  top:80px;
+}
+30%{
+  top: 20px;
+}
+40%{
+  top:80px;
+}
+100%{
+  top: 80px;
+  opacity: 1;
+}
+}
+
+@keyframes upNdown_c{
+  0%{
+  top: 40px;
+  }
+  50%{
+    top: 30px;
+  }
+  100%{
+    top: 40px;
+  }
+}
+
+.upNdown{
+animation-iteration-count: infinite;
+animation-play-state: running;
+animation: upNdown 2s infinite;
+}
+
+.upNdown_c{
+animation-iteration-count: infinite;
+animation-play-state: running;
+animation: upNdown_c 2s linear infinite;
+}
+
+.fadeIn{
   animation-iteration-count: infinite;
   animation-play-state: running;
   animation: bgFadeIn 2s forwards;
 }
 
-.card-img.fadeOut{
+.fadeOut{
   animation-iteration-count: infinite;
   animation-play-state: running;
   animation: bgFadeOut 2s forwards;
