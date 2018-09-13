@@ -54,6 +54,9 @@ html,body{
   height: 150px; width: 150px;
   opacity: 0.7;
   position: absolute;
+}
+
+img{
   image-rendering: -moz-crisp-edges;
 image-rendering: -webkit-crisp-edges;
 image-rendering: pixelated;
