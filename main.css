@@ -23,30 +23,31 @@ background-image: url(./assets/img/bg.png);
   #block1{
     background-color: white;
     border-radius: 10px;
-    box-shadow: gray;
     height: 80px;
     padding: 30px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05), 0 3px 10px 0 rgba(0, 0, 0, 0.1);
   }
 
   #block2{
     background-color: white;
     border-radius: 10px;
-    /*margin: 20px; */
+    margin-top: 20px; 
     padding: 30px; 
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05), 0 3px 10px 0 rgba(0, 0, 0, 0.1);
     /* height: 80px; */
   } 
 
 #footer{
 background-color: rgba(78,134,158,1);
 margin-top: 50px;
-height: 160px;
+height: 180px;
 position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
     margin-bottom: 0px;
-    padding-bottom: 0px;
     overflow: hidden;
+    padding-bottom: 20px;
 }
 
 html,body{
@@ -156,6 +157,23 @@ opacity: 0;
 
 .fa-fish:hover{
   font-size: 25px;
+}
+
+#copyright{
+  color: white;
+  width: auto;
+  font-size: 20px;
+}
+
+#contactInfo{
+  text-decoration: underline;
+  width: auto;
+}
+
+#center{
+  flex: 1;
+  align-items: space-around;
+  justify-content: space-around;
 }
 
 @keyframes bgFadeIn{
