@@ -1,22 +1,61 @@
+  a{
+    color: black;
+    text-decoration: none; /* no underline */
+  }
+
+  a:hover{
+    color: black;
+    text-decoration: none; /* no underline */
+  }
+
+  #title{
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  #cyan{
+    background-color: cyan;
+  }
+
   body{
 background-image: url(./assets/img/bg.png);
   }
 
+  #block1{
+    background-color: white;
+    border-radius: 10px;
+    height: 80px;
+    padding: 30px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05), 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  #block2{
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 20px; 
+    padding: 30px; 
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05), 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+    /* height: 80px; */
+  } 
+
 #footer{
 background-color: rgba(78,134,158,1);
 margin-top: 50px;
-height: 160px;
+height: 180px;
 position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
     margin-bottom: 0px;
-    padding-bottom: 0px;
     overflow: hidden;
+    padding-bottom: 20px;
 }
 
 html,body{
     height: 100%
+}
+
+#myModal{
+  top:200px;
 }
 
 #home{
@@ -31,7 +70,6 @@ html,body{
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
     cursor: pointer; font-size: 30px;
-    target="_blank";
 }
 #footer ul.social li{
 	padding: 3px 0;
@@ -51,13 +89,17 @@ html,body{
 #portfolio img {
   object-fit: cover;
   cursor: pointer;
-  height: 150px; width: 150px;
-  opacity: 0.7;
+  height: 150px; width: 200px;
+  opacity: 0.9;
   position: absolute;
+
+  -webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
 }
 
 img{
-  image-rendering: -moz-crisp-edges;
+image-rendering: -moz-crisp-edges;
 image-rendering: -webkit-crisp-edges;
 image-rendering: pixelated;
 image-rendering: crisp-edges;
@@ -69,8 +111,8 @@ audio{
 
 #portfolio img:hover {
   object-fit: cover;
-  height: 150px; width: 150px;
-  opacity: 0.9;
+  height: 170px; width: 300px;
+  opacity: 1;
 }
 
 #portfolio h5{
@@ -105,8 +147,8 @@ audio{
 }
 
 .fa-fish{
-margin-left: 450px;
-margin-top: 40px;
+/* margin-left: 450px;
+margin-top: 40px; */
 color: black;
 z-index: 50;
 font-size:20px;
@@ -119,6 +161,23 @@ opacity: 0;
 
 .fa-fish:hover{
   font-size: 25px;
+}
+
+#copyright{
+  color: white;
+  width: auto;
+  font-size: 20px;
+}
+
+#contactInfo{
+  text-decoration: underline;
+  width: auto;
+}
+
+#center{
+  flex: 1;
+  align-items: space-around;
+  justify-content: space-around;
 }
 
 @keyframes bgFadeIn{

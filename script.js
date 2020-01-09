@@ -1,14 +1,12 @@
 var anim = new Array();
-var fish = new Array();
 var textAnim0 = new Array();
 var textAnim1 = new Array();
 var IN = new Array();
-for(i=0; i<5; i++){
+for(i=0; i<7; i++){
 anim[i] = document.getElementById("aD"+i),
-fish[i] = document.getElementById("f"+i),
 pfx = ["webkit", "moz", "MS", "o", ""], IN[i] = true;
-textAnim0[i] = document.getElementById("t"+i).children[0];
-textAnim1[i] = document.getElementById("t"+i).children[1];
+textAnim0[i] = document.getElementById("t"+i).getElementsByTagName("h5")[0];
+textAnim1[i] = document.getElementById("t"+i).getElementsByTagName("p")[0];
 
 }
 
@@ -29,10 +27,8 @@ function playAnim(id) {
     anim[id].classList.remove("fadeOut");
   textAnim0[id].classList.remove("fadeOut");
 textAnim1[id].classList.remove("fadeOut");}
-fish[id].classList.remove("fadeOut");
     if(!anim[id].classList.contains("fadeIn")){
 anim[id].classList.add("fadeIn");
-fish[id].classList.add("fadeIn");
 
 textAnim0[id].setAttribute("data-text",
 textAnim0[id].textContent);
@@ -48,15 +44,14 @@ animText1(id);
 }else{
   if(anim[id].classList.contains("fadeIn")){
   anim[id].classList.remove("fadeIn");
-fish[id].classList.remove("fadeIn")}
   if(!anim[id].classList.contains("fadeOut")){
 anim[id].classList.add("fadeOut");
-fish[id].classList.add("fadeOut");
 textAnim0[id].classList.add("fadeOut");
 textAnim1[id].classList.add("fadeOut");
 }
 }
 IN[id] = !IN[id];
+}
 }
 
 function animText0(id){
@@ -94,5 +89,15 @@ function pp(){
 }else{
   document.getElementById('pp').classList.remove("fa-poo");
   document.getElementById('pp').classList.add("fa-poop");
+}
+}
+
+function moon(){
+  if(document.getElementById('moon').classList.contains("far")){
+  document.getElementById('moon').classList.remove("far");
+  document.getElementById('moon').classList.add("fas");
+}else{
+  document.getElementById('moon').classList.remove("fas");
+  document.getElementById('moon').classList.add("far");
 }
 }
