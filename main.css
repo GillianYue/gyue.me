@@ -8,10 +8,33 @@
     text-decoration: none; /* no underline */
   }
 
+  #title{
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  #cyan{
+    background-color: cyan;
+  }
 
   body{
 background-image: url(./assets/img/bg.png);
   }
+
+  #block1{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: gray;
+    height: 80px;
+    padding: 30px;
+  }
+
+  #block2{
+    background-color: white;
+    border-radius: 10px;
+    /*margin: 20px; */
+    padding: 30px; 
+    /* height: 80px; */
+  } 
 
 #footer{
 background-color: rgba(78,134,158,1);
@@ -65,9 +88,13 @@ html,body{
 #portfolio img {
   object-fit: cover;
   cursor: pointer;
-  height: 150px; width: 150px;
+  height: 150px; width: 200px;
   opacity: 0.9;
   position: absolute;
+
+  -webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
 }
 
 img{
@@ -79,7 +106,7 @@ image-rendering: crisp-edges;
 
 #portfolio img:hover {
   object-fit: cover;
-  height: 150px; width: 150px;
+  height: 170px; width: 300px;
   opacity: 1;
 }
 
