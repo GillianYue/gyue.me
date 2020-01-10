@@ -50,8 +50,9 @@ textAnim0[id].classList.add("fadeOut");
 textAnim1[id].classList.add("fadeOut");
 }
 }
-IN[id] = !IN[id];
+
 }
+IN[id] = !IN[id];
 }
 
 function animText0(id){
